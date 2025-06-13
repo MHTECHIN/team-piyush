@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "884374518691",
+    "project_id": "farmlancer-c2b5d",
+    "storage_bucket": "farmlancer-c2b5d.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:884374518691:android:6731fc571872bcd500f816",
+        "android_client_info": {
+          "package_name": "com.example.flutter01"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7iKWDAr-kss1SOKYkzImt1Ck13YEA60w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -6,7 +6,7 @@
 
     <application
         android:usesCleartextTraffic="true"
-        android:label="flutter01"
+        android:label="Farmlancer"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
 

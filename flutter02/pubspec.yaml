@@ -10,12 +10,22 @@ dependencies:
   flutter:
     sdk: flutter
   webview_flutter_plus: ^0.4.19
+  firebase_core: ^3.14.0
+  firebase_messaging: ^15.2.7
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^6.0.0
-  
+  flutter_launcher_icons: ^0.14.4
 
 flutter:
   uses-material-design: true
+
+  assets:
+    - assets/farmlancer2.png
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/farmlancer2.png"
