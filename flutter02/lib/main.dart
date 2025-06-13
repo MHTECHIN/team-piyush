@@ -17,7 +17,7 @@ void showGlobalNotification(String message) {
   );
 }
 
-/// 🔙 Background message handler
+
 @pragma('vm:entry-point')
 Future<void> _firebaseMessagingBackgroundHandler(RemoteMessage message) async {
   await Firebase.initializeApp();
@@ -30,7 +30,6 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
 
-  // 🔔 Register background message handler
   FirebaseMessaging.onBackgroundMessage(_firebaseMessagingBackgroundHandler);
 
   runApp(const WebViewPlusExample());
@@ -63,7 +62,6 @@ class _MainPageState extends State<MainPage> {
   void initState() {
     super.initState();
 
-    // ✅ Subscribe to topic: all_users
     FirebaseMessaging.instance.subscribeToTopic("all_users").then((_) {
       if (kDebugMode) {
         print("✅ Subscribed to topic: all_users");
@@ -74,7 +72,6 @@ class _MainPageState extends State<MainPage> {
       }
     });
 
-    // 🔔 Foreground message handler
     FirebaseMessaging.onMessage.listen((RemoteMessage message) {
       if (message.notification != null) {
         final title = message.notification!.title ?? "No Title";
@@ -83,14 +80,14 @@ class _MainPageState extends State<MainPage> {
       }
     });
 
-    // 📱 For testing: Print FCM token
+    // For testing: Print FCM token
     FirebaseMessaging.instance.getToken().then((token) {
       if (kDebugMode) {
         print("📲 FCM Token: $token");
       }
     });
 
-    // 🌐 Load WebView
+    // its WebView
     _controller = WebViewControllerPlus()
       ..setNavigationDelegate(
         NavigationDelegate(
