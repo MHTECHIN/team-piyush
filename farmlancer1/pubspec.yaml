@@ -1,0 +1,24 @@
+name: pubspec
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.8.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  water_drop_nav_bar: ^2.1.0
+  dcubo_iconify: ^0.1.1
+  dcubo_iconify_bi: ^1.11.3
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  water_drop_nav_bar: ^2.2.0 # or latest available version
+
+flutter:
+  uses-material-design: true
